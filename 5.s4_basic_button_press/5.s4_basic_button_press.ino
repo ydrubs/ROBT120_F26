@@ -18,7 +18,7 @@ void setup()
 
 void loop()
 {
-  if pass
+  if (digitalRead(BUTTON) == HIGH)
   {
     digitalWrite(LED, LOW);
   }

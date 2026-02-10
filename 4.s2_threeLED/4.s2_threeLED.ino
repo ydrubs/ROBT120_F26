@@ -12,7 +12,7 @@ void setup() {
 
 void loop() {
   // Turn all LEDs ON
-  digitalWrite(LED1, HIGH);
+  digitalWrite(LED1, HIGH); //Turns on LED 1 
   digitalWrite(LED2, HIGH);
   digitalWrite(LED3, HIGH);
 
@@ -25,3 +25,4 @@ void loop() {
 
   delay(1000);  // Wait 1 second
 }
+

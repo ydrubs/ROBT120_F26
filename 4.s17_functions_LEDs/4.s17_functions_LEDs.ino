@@ -53,3 +53,8 @@ void pingPong() {
     digitalWrite(pin, LOW);
   }
 }
+
+void one_led_fade(){
+  
+
+}
