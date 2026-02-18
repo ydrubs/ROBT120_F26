@@ -18,11 +18,13 @@ int val = 0;             // Variable to hold the analog reading
 void setup()
 {
   pinMode(WLED, OUTPUT); // Set White LED pin as output
+  Serial.begin(9600);
 }
 
 void loop()
 {
   val = analogRead(LIGHT);                      // Read the light sensor
+  Serial.println(val);
   val = map(val, MIN_LIGHT, MAX_LIGHT, 255, 0); // Map the light reading
   val = constrain(val, 0, 255);                 // Constrain light value
   analogWrite(WLED, val);                       // Control the White LED
