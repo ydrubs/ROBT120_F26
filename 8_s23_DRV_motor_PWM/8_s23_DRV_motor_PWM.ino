@@ -1,8 +1,8 @@
 // Define motor control pins
-#define MOTOR_A_IN1 5
-#define MOTOR_A_IN2 6
-#define MOTOR_B_IN1 9
-#define MOTOR_B_IN2 10
+#define MOTOR_A_IN1 9
+#define MOTOR_A_IN2 10
+#define MOTOR_B_IN1 5
+#define MOTOR_B_IN2 6
 
 void setup() {
   // Set the motor control pins as outputs
@@ -14,7 +14,7 @@ void setup() {
 
 void loop() {
   // Example: Drive motor A forward at half speed
-  analogWrite(MOTOR_A_IN1, 128);  // PWM value (0-255) for IN1
+  analogWrite(MOTOR_A_IN1, 127);  // PWM value (0-255) for IN1
   digitalWrite(MOTOR_A_IN2, 0);    // IN2 set to LOW
 
   // Example: Drive motor B backward at full speed
