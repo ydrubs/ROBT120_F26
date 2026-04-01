@@ -34,11 +34,11 @@ int main(void)
     {
         // Set PB4 HIGH
         PORTB |= (1 << PORTB4);
-        _delay_ms(500);
+        _delay_ms(1000);
 
         // Set PB4 LOW
         PORTB &= ~(1 << PORTB4);
-        _delay_ms(500);
+        _delay_ms(1000);
     }
 
     return 0;
