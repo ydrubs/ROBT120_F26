@@ -7,11 +7,13 @@ int main(void)
 {
     // Set PB4 (pin 12) as OUTPUT
     DDRB = 0b00010000;
+    // DDRD |=(1<<PD3) | (1<<PD4)
 
     while (1)
     {
         // Turn ONLY PB4 ON (everything else OFF)
         PORTB = 0b00010000;
+        // PORTD |= (1<<PD3)
         _delay_ms(500);
 
         // Turn EVERYTHING OFF
